@@ -23,5 +23,6 @@ jobs:
           # cp deploy-profiles.clj profiles.clj
           ls -al
           git status
+          lein pprint
       - name: release
         run: lein release
