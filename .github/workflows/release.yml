@@ -14,5 +14,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: debug
+        run: |
+          cd $GITHUB_WORKSPACE
+          pwd
+          ls -al
       - name: release
         run: lein deploy clojars
