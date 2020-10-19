@@ -24,4 +24,4 @@ jobs:
           ls -al
           git status
       - name: release
-        run: lein deploy
+        run: lein deploy clojars
