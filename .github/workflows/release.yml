@@ -22,5 +22,6 @@ jobs:
           # setup deployment config
           mv deploy-profiles.clj profiles.clj
           ls -al
+          git status
       - name: release
-        run: lein release
+        run: lein deploy
