@@ -9,22 +9,17 @@ on:
 
 jobs:
 
-  lein:
+  deploy:
+
     runs-on: ubuntu-latest
     container: clojure:lein
     steps:
       - name: checkout
         uses: actions/checkout@v2
-
       - name: deploy config
         run: |
           cd $GITHUB_WORKSPACE
           # setup deployment config
           mv deploy-profiles.clj profiles.clj
-      - name: debug
-        run: |
-          cd $GITHUB_WORKSPACE
-          pwd
-          ls -al
       - name: release
-        run: lein deploy
+        run: lein release
