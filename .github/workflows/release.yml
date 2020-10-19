@@ -25,4 +25,7 @@ jobs:
           git status
           lein pprint
       - name: release
+        env:
+          CLOJARS_USERNAME: ${{ secrets.CLOJARS_USERNAME }}
+          CLOJARS_PASSWORD: ${{ secrets.CLOJARS_PASSWORD }}
         run: lein release

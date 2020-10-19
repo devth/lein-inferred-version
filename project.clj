@@ -6,11 +6,7 @@
   :plugins [[lein-inferv "20201019.024318.09c7a3a"]
             [lein-pprint "1.3.2"]]
 
-  :deploy-repositories [["snapshots" {:url "https://clojars.org/repo"
-                                      :username :env/clojars_username
-                                      :password :env/clojars_password
-                                      :sign-releases false}]
-                        ["releases"  {:url "https://clojars.org/repo"
+  :deploy-repositories [["releases"  {:url "https://clojars.org/repo"
                                       :username :env/clojars_username
                                       :password :env/clojars_password
                                       :sign-releases false}]]
