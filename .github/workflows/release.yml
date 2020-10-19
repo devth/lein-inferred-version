@@ -20,7 +20,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           # setup deployment config
-          mv deploy-profiles.clj profiles.clj
+          cp deploy-profiles.clj profiles.clj
           ls -al
           git status
       - name: release
