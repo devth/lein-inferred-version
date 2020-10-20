@@ -3,7 +3,7 @@
   :url "https://github.com/devth/lein-inferv"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
-  :plugins [[lein-inferv "20201019.151901.3068f85"]
+  :plugins [[lein-inferv "20201020.013703.64afdf2"]
             [lein-pprint "1.3.2"]]
 
   :deploy-repositories [["releases"  {:url "https://clojars.org/repo"
