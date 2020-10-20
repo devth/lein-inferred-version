@@ -16,14 +16,6 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: deploy config
-        run: |
-          cd $GITHUB_WORKSPACE
-          # setup deployment config
-          # cp deploy-profiles.clj profiles.clj
-          ls -al
-          git status
-          lein pprint
       - name: release
         env:
           CLOJARS_USERNAME: ${{ secrets.CLOJARS_USERNAME }}
